@@ -102,7 +102,7 @@ public class PlayerController : MonoBehaviour
     {
         
         //Cap teh velocity of the player.
-        pVelocity = new Vector3(pVelocity.x < pMaxMoveSpeed ? pVelocity.x : pMaxMoveSpeed, 0, pVelocity.z < pMaxMoveSpeed ? pVelocity.z : pMaxMoveSpeed);
+        pVelocity = new Vector3((pVelocity.x < pMaxMoveSpeed ? pVelocity.x : pMaxMoveSpeed), (0), (pVelocity.z < pMaxMoveSpeed ? pVelocity.z : pMaxMoveSpeed));
         
         //Move player in game based off of velocity
         pController.Move(new Vector3(pVelocity.x, pMoveDir.y * Time.deltaTime, pVelocity.z));
